@@ -27,13 +27,14 @@ with open(resume_file, "rb") as pdf_file:
 
 lottie_coder= load_lottieurl('https://lottie.host/ef3cc8e5-2736-485f-9066-20119843c294/1CPJAT5QIl.json')
 lottie_contact=load_lottieurl('https://lottie.host/2a28fb7b-89ba-4947-8a81-469acb95e234/M1wTU18DNm.json')
-image=Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\project.png")
-image2=Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\programming.png")
-image_mine=Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\image_copy.png")
-image_data= Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\business-analyst.png")
-github= Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\github.png")
-linkedin=Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\linkedin.png")
-CV=Image.open(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Images\cv.png")
+image = Image.open(current_dir / "Images" / "project.png")
+image2 = Image.open(current_dir / "Images" / "programming.png")
+image_mine = Image.open(current_dir / "Images" / "image_copy.png")
+image_data = Image.open(current_dir / "Images" / "business-analyst.png")
+github = Image.open(current_dir / "Images" / "github.png")
+linkedin = Image.open(current_dir / "Images" / "linkedin.png")
+CV = Image.open(current_dir / "Images" / "cv.png")
+
 with st.container():
     col7, col8, = st.columns([2,1])
     with col7:
