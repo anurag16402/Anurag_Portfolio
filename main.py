@@ -121,7 +121,6 @@ if selected=="Projects":
             st.image(image2, width=200)
             st.write("##")
             st.write("##")
-            st.write("##")
             st.image(image, width=200)
         with col6:
 

@@ -1,3 +1,14 @@
+/* Set the overall background color to dark grey */
+body {
+  background-color: #2e2e2e;
+  color: #ffffff; /* Set the text color to white for better contrast */
+}
+
+.container {
+  background-color: #2e2e2e; /* Dark grey background for containers */
+  color: #ffffff; /* White text color */
+}
+
 input[type=message], nput[type=email], nput[type=message] {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
