@@ -9,7 +9,7 @@ from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 resume_file= current_dir / "Images" / "Anurag_Resume_GV.pdf"
 resume_file= ("Images/Anurag_Resume_GV.pdf")
-
+css_file = current_dir / "Style" / "style.css"
 st.set_page_config(layout="wide")
 
 def load_lottieurl(url):
@@ -18,10 +18,8 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>(f.read())</style>", unsafe_allow_html=True)
-local_css(r"C:\Users\DELL\Desktop\streamlit portfolio\Portfolio\Style\style.css")
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
@@ -59,8 +57,6 @@ with st.container():
                     mime="application/octet-stream"
                 )
 
-        st.write("[Read More](http://localhost:8502)")
-        st.write('----')
     with col8:
         st.image(image_mine, width=200, )
 
@@ -159,7 +155,6 @@ users through various operations.
 if selected == "Contact":
     st.header("Get in touch")
     st.write('##')
-    st.write("##")
 
     contact_form = """
 <div class="container">
