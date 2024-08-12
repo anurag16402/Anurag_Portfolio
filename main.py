@@ -75,11 +75,10 @@ if selected =='About':
         col1, col2 = st.columns(2)
         with col1:
             st.write("##")
-            st.subheader("I'm Anurag Nagvanshi")
             st.title("Undergrad at PSIT")
             st.write("I am a BTech graduate majored in Electronics and Communication Engineering. I have understanding of DSA, Python, OOPs Concepts.")
             st.write("I have expirience HTML/CSS, Django, Streamlit and Generative AI.")
-            st.write("I'm actively looking for oppurtunities tokickstart my journey,learn from experts and make difference within a forward thinking organization")
+            st.write("I'm actively looking for oppurtunities to kickstart my journey,learn from experts and make difference within a forward thinking organization")
         with col2:
             st_lottie(lottie_coder)
     

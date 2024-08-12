@@ -1,33 +1,22 @@
-/* Apply dark grey background to the entire body */
+/* style.css */
+
 body {
-  background-color: #2e2e2e;
-  color: #ffffff; /* White text color for contrast */
+  background-color: #0E1117;
+  color: #ffffff; /* Optional: Set text color to white for better contrast */
 }
 
-.stApp {
-  background-color: #2e2e2e; /* Ensure Streamlit's main app container uses dark grey */
-}
-
-/* Style for container to match overall theme */
-.container {
-  background-color: #2e2e2e;
-  color: #ffffff;
-}
-
-/* Input fields styling */
 input[type=text], input[type=email], textarea {
-  background-color: #3e3e3e;
-  color: #ffffff;
+  width: 100%;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 12px;
+  box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
-/* Button styling */
-button[type=submit], .stButton>button {
+button[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -36,17 +25,6 @@ button[type=submit], .stButton>button {
   cursor: pointer;
 }
 
-button[type=submit]:hover, .stButton>button:hover {
+button[type=submit]:hover {
   background-color: #45a049;
-}
-
-/* Adjusting other elements to match dark theme */
-.stMarkdown, .stTextInput, .stTextArea, .stButton, .stDownloadButton {
-  background-color: #2e2e2e;
-  color: #ffffff;
-}
-
-/* Link styling */
-a {
-  color: #04AA6D;
 }
