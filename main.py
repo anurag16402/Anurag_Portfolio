@@ -115,7 +115,6 @@ if selected=="Projects":
         st.write("##")
         col5, col6 = st.columns((1,2))
         with col5:
-            st.write("##")
             st.image(image_data, width=200)
             st.write("##")
             st.write("##")
