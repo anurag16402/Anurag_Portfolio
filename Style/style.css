@@ -1,38 +1,52 @@
-/* Set the overall background color to dark grey */
+/* Apply dark grey background to the entire body */
 body {
   background-color: #2e2e2e;
-  color: #ffffff; /* Set the text color to white for better contrast */
+  color: #ffffff; /* White text color for contrast */
 }
 
+.stApp {
+  background-color: #2e2e2e; /* Ensure Streamlit's main app container uses dark grey */
+}
+
+/* Style for container to match overall theme */
 .container {
-  background-color: #2e2e2e; /* Dark grey background for containers */
-  color: #ffffff; /* White text color */
+  background-color: #2e2e2e;
+  color: #ffffff;
 }
 
-input[type=message], nput[type=email], nput[type=message] {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  button[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  button[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  
+/* Input fields styling */
+input[type=text], input[type=email], textarea {
+  background-color: #3e3e3e;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Button styling */
+button[type=submit], .stButton>button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover, .stButton>button:hover {
+  background-color: #45a049;
+}
+
+/* Adjusting other elements to match dark theme */
+.stMarkdown, .stTextInput, .stTextArea, .stButton, .stDownloadButton {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+/* Link styling */
+a {
+  color: #04AA6D;
+}
